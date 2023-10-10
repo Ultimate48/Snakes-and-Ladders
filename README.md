@@ -7,7 +7,6 @@ Game Procedure :
 
 Requirements :
 1. Track of number of player(minimum 2)
-2. Represent them by different variables(a, b, c, d...)
 3. Track of their positions on the board
 4. Record of the snakes and ladders on the board
 5. The players move forward by a dice roll
