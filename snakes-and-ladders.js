@@ -1,4 +1,4 @@
-const Sanke_And_Ladders = (playersName) => {
+const Snakes_And_Ladders = (playersName) => {
 
     let currentPlayer = 0
     let rank = []
