@@ -46,8 +46,8 @@ const Snakes_And_Ladders = (playersName) => {
 
     const players = []
 
-    playersName.forEach(player => {
-        players.push(player(player))
+    playersName.forEach(p => {
+        players.push(player(p))
     });
 
     function diceRoll(){
@@ -89,11 +89,13 @@ const Snakes_And_Ladders = (playersName) => {
 
     function play(){
         if (isGameOver()) {
+            rank.push(players[currentPlayer].name)
+            players.splice(currentPlayer, 1)
             return rank
         }
         let randomNumber = diceRoll()
         updatePosition(currentPlayer, randomNumber)
         currentPlayer = currentPlayer === players.length - 1 ? 0 : currentPlayer + 1
-        return rank, players
+        return [rank, players]
     }
 }
